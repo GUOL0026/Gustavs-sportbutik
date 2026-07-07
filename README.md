@@ -1,3 +1,3 @@
 # Information
 
-Detta är en utvecklingsmiljö samt metod för att publicera en fiktig webshop inom en kurs i webbutveckling.
+Detta är en utvecklingsmiljö samt metod för att publicera en fiktig webbshop inom en kurs i webbutveckling.
