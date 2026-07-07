@@ -1,0 +1,260 @@
+/* Färger. */
+:root {
+  --primary-color: #1f3a5f;
+  --secondary-color: #dbeafe;
+  --accent-color: #f2c94c;
+  --dark-color: #2b2b2b;
+  --light-color: #ffffff;
+  --soft-gray: #f5f5f5;
+  --border-color: #d0d0d0;
+}
+
+/* Gör det enklare att kontrollera bredd, padding och kantlinjer. */
+* {
+  box-sizing: border-box;
+}
+
+/* Grundstil för hela webbplatsen. */
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--dark-color);
+  background-color: var(--light-color);
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Gör så att footern hamnar längst ner även på sidor med lite innehåll. */
+main {
+  flex: 1;
+}
+
+/* Rubriker får ett annat typsnitt än brödtexten. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--primary-color);
+  margin-top: 0;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* Navigation. */
+/* Gör butikens namn tydligt i navigationen. */
+.navbar-brand {
+  font-weight: bold;
+}
+
+/* Gör navigationslänkarna tydliga. */
+.nav-link {
+  font-weight: 600;
+}
+
+/* Tydligare fokusläge för tangentbordsnavigering. */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 3px solid var(--accent-color);
+  outline-offset: 3px;
+}
+
+/*Startsida. */
+/* Hero-sektion på startsidan. */
+.hero-section {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+/* Rubrik och text i hero-sektionen ska vara ljusa mot mörk bakgrund. */
+.hero-section h1,
+.hero-section p {
+  color: var(--light-color);
+}
+
+/* Call-to-action-sektion på startsidan. */
+.cta-section {
+  background-color: var(--light-color);
+}
+
+/* Mellanrum mellan kontaktknappen och svarstiden. */
+.response-time {
+  margin-top: 16px;
+}
+
+/* Sidhuvud på undersidor. */
+.page-header {
+  background-color: var(--soft-gray);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Produktkort och produktbilder. */
+/* Gemensam stil för produktkort. */
+.product-card {
+  background-color: var(--light-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+/* Bilder i produktkort får samma storlek och lugn bakgrund. */
+.product-card img {
+  height: 220px;
+  object-fit: contain;
+  padding: 16px;
+  background-color: var(--soft-gray);
+}
+
+/* Pristext på produktkort och produktsida. */
+.price {
+  font-weight: bold;
+  color: var(--primary-color);
+  font-size: 18px;
+}
+
+/* Större pris på den detaljerade produktsidan. */
+.large-price {
+  font-size: 28px;
+}
+
+/* Stor produktbild på produktsidan. */
+.product-detail-img {
+  background-color: var(--soft-gray);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+/* Mindre bild i kundkorgen. */
+.cart-img {
+  width: 80px;
+  height: auto;
+  margin-right: 12px;
+  vertical-align: middle;
+  border-radius: 6px;
+}
+
+/* Knappar */
+/* Anpassar Bootstrap-knappar till webbplatsens färgtema. */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #142840;
+  border-color: #142840;
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+/* Egen färg för knappen "Se produkter" på startsidan */
+.start-product-button {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--dark-color);
+}
+
+.start-product-button:hover,
+.start-product-button:focus {
+  background-color: #d9ad2b;
+  border-color: #d9ad2b;
+  color: var(--dark-color);
+}
+
+/* Formulär */
+/* Gör labels tydliga i kontaktformuläret. */
+label {
+  font-weight: bold;
+}
+
+/* Tydligare fokusläge i formulärfält. */
+input:focus,
+textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: none;
+}
+
+/* Tabell i kundkorg */
+caption {
+  color: var(--dark-color);
+  font-size: 14px;
+}
+
+/* Footer */
+.site-footer {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+.site-footer p {
+  margin: 6px 0;
+}
+
+.site-footer a {
+  color: var(--light-color);
+  text-decoration: underline;
+}
+
+.site-footer a:hover,
+.site-footer a:focus {
+  color: var(--accent-color);
+}
+
+/* Mindre rubriker och bilder på små skärmar. */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .product-card img {
+    height: 180px;
+  }
+
+  .cart-img {
+    width: 60px;
+  }
+}

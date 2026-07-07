@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gustavs sportbutik - Produkter</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <!-- Huvudnavigation som återkommer på samtliga sidor. -->
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Gustavs sportbutik</a>
+
+        <ul class="navbar-nav ms-auto flex-column flex-sm-row gap-sm-3">
+          <li class="nav-item"><a class="nav-link" href="index.html">Start</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="produkter.html">Produkter</a></li>
+          <li class="nav-item"><a class="nav-link" href="kundkorg.html">Kundkorg</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Sidhuvud för produktlistningssidan. -->
+    <section class="page-header py-5">
+      <div class="container">
+        <h1>Produktlista</h1>
+        <p class="lead">Här hittar du sportutrustning för golf, tennis, fotboll och löpning.</p>
+      </div>
+    </section>
+
+   <!-- Produktlista uppbyggd som en lista med Bootstrap grid och semantiska article-element. -->
+  <section class="container my-5" aria-labelledby="produktlista-rubrik">
+    <h2 id="produktlista-rubrik" class="visually-hidden">Alla produkter</h2>
+
+    <ul class="row g-4 list-unstyled">
+      <li class="col-md-6 col-lg-3">
+        <article class="card h-100 product-card">
+          <img src="img/golfklubba.jpg" class="card-img-top" alt="Golfklubba på ljus bakgrund">
+          <div class="card-body">
+            <h3 class="card-title h5">Golfklubba</h3>
+            <p class="card-text">Golfklubba för nybörjare och fritidsspelare.</p>
+            <p class="price">899 kr</p>
+            <a href="produkt-golfklubba.html" class="btn btn-primary">Läs mer</a>
+          </div>
+        </article>
+      </li>
+
+      <li class="col-md-6 col-lg-3">
+        <article class="card h-100 product-card">
+          <img src="img/tennisrack.jpg" class="card-img-top" alt="Tennisrack med blå detaljer på ljus bakgrund">
+          <div class="card-body">
+            <h3 class="card-title h5">Tennisrack</h3>
+            <p class="card-text">Lättspelat tennisrack för motion och träning.</p>
+            <p class="price">749 kr</p>
+            <a href="kontakt.html" class="btn btn-primary">Fråga om produkten</a>
+          </div>
+        </article>
+      </li>
+
+      <li class="col-md-6 col-lg-3">
+        <article class="card h-100 product-card">
+          <img src="img/fotboll.jpg" class="card-img-top" alt="Fotboll med mörka och orange detaljer på ljus bakgrund">
+          <div class="card-body">
+            <h3 class="card-title h5">Fotboll</h3>
+            <p class="card-text">Slitstark fotboll för träning och spontanspel.</p>
+            <p class="price">299 kr</p>
+            <a href="kontakt.html" class="btn btn-primary">Fråga om produkten</a>
+          </div>
+        </article>
+      </li>
+
+      <li class="col-md-6 col-lg-3">
+        <article class="card h-100 product-card">
+          <img src="img/loparskor.jpg" class="card-img-top" alt="Mörkblå löparskor med orange detaljer på ljus bakgrund">
+          <div class="card-body">
+            <h3 class="card-title h5">Löparskor</h3>
+            <p class="card-text">Bekväma löparskor för kortare och medellånga rundor.</p>
+            <p class="price">1 199 kr</p>
+            <a href="kontakt.html" class="btn btn-primary">Fråga om produkten</a>
+          </div>
+        </article>
+      </li>
+    </ul>
+  </section>
+  </main>
+
+  <footer class="site-footer py-4">
+    <div class="container text-center">
+      <p>Gustavs sportbutik: En fiktiv webbshop inom ramen för kursen Webbutveckling.</p>
+      <p>Sommaren 2026</p>
+    </div>
+  </footer>
+
+</body>
+</html>
